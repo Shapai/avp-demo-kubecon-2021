@@ -41,6 +41,7 @@ spec:
       labels:
         app: nginx
     spec:
+      serviceAccountName: default
       automountServiceAccountToken: true
       containers:
       - name: nginx
