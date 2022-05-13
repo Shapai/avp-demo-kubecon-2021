@@ -41,6 +41,7 @@ spec:
       labels:
         app: nginx
     spec:
+      automountServiceAccountToken: true
       containers:
       - name: nginx
         image: docker.io/openresty/openresty:1.19.9.1-0-alpine
